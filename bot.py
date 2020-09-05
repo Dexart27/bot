@@ -7,7 +7,7 @@ import youtube_dl
 from discord.ext import commands
 from discord.utils import get
 
-discord.opus.load_opus(opus)
+discord.opus.load_opus('opus')
 if not discord.opus.is_loaded():
     raise RunTimeError('Opus failed to load')
     
